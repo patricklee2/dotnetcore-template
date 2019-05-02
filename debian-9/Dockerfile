@@ -1,9 +1,5 @@
-FROM oryxprod/dotnetcore-2.2:20190422.4
+FROM ${tag}
 LABEL maintainer="Azure App Services Container Images <appsvc-images@microsoft.com>"
-
-COPY bin.zip /tmp
-COPY init_container.sh /bin/
-COPY sshd_config /etc/ssh/
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
@@ -21,17 +17,17 @@ RUN mkdir -p /defaulthome/hostingstart \
     && echo "root:Docker!" | chpasswd \
     && echo "cd /home" >> /etc/bash.bashrc
 
-
+COPY bin.zip /tmp
 RUN unzip -q -o /tmp/bin.zip -d /defaulthome/hostingstart \
     && rm /tmp/bin.zip
 
-
+COPY init_container.sh /bin/
 RUN chmod 755 /bin/init_container.sh
 
 COPY hostingstart.html /defaulthome/hostingstart/wwwroot/
 
 # configure startup
-
+COPY sshd_config /etc/ssh/
 COPY ssh_setup.sh /tmp
 RUN mkdir -p /opt/startup \
    && chmod -R +x /opt/startup \
