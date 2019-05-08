@@ -1,4 +1,4 @@
-FROM ${tag}
+FROM ${TAG}
 LABEL maintainer="Azure App Services Container Images <appsvc-images@microsoft.com>"
 
 COPY bin.zip /tmp
