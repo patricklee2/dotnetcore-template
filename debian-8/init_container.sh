@@ -27,7 +27,7 @@ oryxArgs="-appPath $appPath -sourcePath $sourcePath -output $startupCommandPath 
     -bindPort $PORT -userStartupCommand '$@'"
 
 if [ "$APP_SVC_RUN_FROM_COPY" = true ]; then
-    oryxArgs="-runFromPath /tmp $oryxArgs"
+    oryxArgs="-runFromPath /tmp/webapp $oryxArgs"
 fi
 
 echo "Running oryx $oryxArgs"
