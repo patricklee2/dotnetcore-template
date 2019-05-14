@@ -20,10 +20,9 @@ sed -i "s/SSH_PORT/$SSH_PORT/g" /etc/ssh/sshd_config
 /usr/sbin/sshd
 
 appPath="/home/site/wwwroot/"
-sourcePath="/home/site/repository/"
 startupCommandPath="/opt/startup/startup.sh"
 defaultAppPath="/defaulthome/hostingstart/hostingstart.dll"
-oryxArgs="-appPath $appPath -sourcePath $sourcePath -output $startupCommandPath -defaultAppFilePath $defaultAppPath \
+oryxArgs="-appPath $appPath -output $startupCommandPath -defaultAppFilePath $defaultAppPath \
     -bindPort $PORT -userStartupCommand '$@'"
 
 if [ "$APP_SVC_RUN_FROM_COPY" = true ]; then
