@@ -25,7 +25,7 @@ RUN apt-get update \
   && apt update \
   && apt install -y --no-install-recommends openssh-server vim curl wget tcptraceroute \
   && chmod 755 /bin/init_container.sh \
-  && mkdir -p /home/LogFiles/
+  && mkdir -p /home/LogFiles/ /opt/startup/
 
 COPY hostingstart.html /defaulthome/hostingstart/wwwroot/
 
