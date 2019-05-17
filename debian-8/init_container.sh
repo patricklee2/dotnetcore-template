@@ -19,15 +19,27 @@ cat /etc/motd
 sed -i "s/SSH_PORT/$SSH_PORT/g" /etc/ssh/sshd_config
 /usr/sbin/sshd
 
-appPath="/home/site/wwwroot/"
+appPath="/home/site/wwwroot"
+runFromPath="/tmp/webapp"
+sourcePath="/home/site/repository/"
 startupCommandPath="/opt/startup/startup.sh"
 defaultAppPath="/defaulthome/hostingstart/hostingstart.dll"
-oryxArgs="-appPath $appPath -output $startupCommandPath -defaultAppFilePath $defaultAppPath \
-    -bindPort $PORT -userStartupCommand '$@'"
+userStartupCommand="$@"
 
+# When run from copy is enabled, Oryx tries to run the app from a different directory (local to the container),
+# so sanitize any input arguments which still reference the wwwroot path. This is true for VS Publish scenarios.
+# Even though VS Publish team might fix this on their end, end users might not have upgraded their extension, so
+# this code needs to be present.
 if [ "$APP_SVC_RUN_FROM_COPY" = true ]; then
-    oryxArgs="-runFromPath /tmp/webapp $oryxArgs"
+    # Trim the ending '/'
+    appPath=$(echo "${appPath%/}")
+    runFromPath=$(echo "${runFromPath%/}")
+    userStartupCommand=$(echo $userStartupCommand | sed "s!$appPath!$runFromPath!g")
+    runFromPathArg="-runFromPath $runFromPath"
 fi
+
+oryxArgs="-appPath $appPath -sourcePath $sourcePath -output $startupCommandPath -defaultAppFilePath $defaultAppPath \
+    -bindPort $PORT -userStartupCommand '$userStartupCommand' $runFromPathArg"
 
 echo "Running oryx $oryxArgs"
 eval oryx $oryxArgs
