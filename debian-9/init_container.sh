@@ -21,7 +21,6 @@ sed -i "s/SSH_PORT/$SSH_PORT/g" /etc/ssh/sshd_config
 
 appPath="/home/site/wwwroot"
 runFromPath="/tmp/webapp"
-sourcePath="/home/site/repository/"
 startupCommandPath="/opt/startup/startup.sh"
 defaultAppPath="/defaulthome/hostingstart/hostingstart.dll"
 userStartupCommand="$@"
@@ -38,7 +37,7 @@ if [ "$APP_SVC_RUN_FROM_COPY" = true ]; then
     runFromPathArg="-runFromPath $runFromPath"
 fi
 
-oryxArgs="-appPath $appPath -sourcePath $sourcePath -output $startupCommandPath -defaultAppFilePath $defaultAppPath \
+oryxArgs="-appPath $appPath -output $startupCommandPath -defaultAppFilePath $defaultAppPath \
     -bindPort $PORT -userStartupCommand '$userStartupCommand' $runFromPathArg"
 
 echo "Running oryx $oryxArgs"
