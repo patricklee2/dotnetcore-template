@@ -9,7 +9,8 @@
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-2.2.git",
         "outputRepoBranchName": "save",
         "webAppName": "appsvcbuild-dotnetcore-2-2-save",
-        "saveArtifacts": true
+        "saveArtifacts": true,
+        "useCache": true
     },
     {
         "stack": "dotnetcore",
@@ -21,7 +22,8 @@
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-2.1.git",
         "outputRepoBranchName": "save",
         "webAppName": "appsvcbuild-dotnetcore-2-1-save",
-        "saveArtifacts": true
+        "saveArtifacts": true,
+        "useCache": true
     },
     {
         "stack": "dotnetcore",
@@ -33,7 +35,8 @@
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-2.0.git",
         "outputRepoBranchName": "save",
         "webAppName": "appsvcbuild-dotnetcore-2-0-save",
-        "saveArtifacts": true
+        "saveArtifacts": true,
+        "useCache": true
     },
     {
         "stack": "dotnetcore",
@@ -45,7 +48,8 @@
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-1.1.git",
         "outputRepoBranchName": "save",
         "webAppName": "appsvcbuild-dotnetcore-1-1-save",
-        "saveArtifacts": true
+        "saveArtifacts": true,
+        "useCache": true
     },
     {
         "stack": "dotnetcore",
@@ -57,6 +61,7 @@
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-1.0.git",
         "outputRepoBranchName": "save",
         "webAppName": "appsvcbuild-dotnetcore-1-0-save",
-        "saveArtifacts": true
+        "saveArtifacts": true,
+        "useCache": true
     }
 ]

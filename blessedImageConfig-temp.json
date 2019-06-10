@@ -5,7 +5,8 @@
         "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.2-20190516.1",
         "templateRepoURL": "https://github.com/Azure-App-Service/dotnetcore-template.git",
         "templateRepoBranchName": "dev",
-        "saveArtifacts": false
+        "saveArtifacts": false,
+        "useCache": true
     },
     {
         "stack": "dotnetcore",
@@ -13,7 +14,8 @@
         "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.1-20190516.1",
         "templateRepoURL": "https://github.com/Azure-App-Service/dotnetcore-template.git",
         "templateRepoBranchName": "dev",
-        "saveArtifacts": false
+        "saveArtifacts": false,
+        "useCache": true
     },
     {
         "stack": "dotnetcore",
@@ -21,7 +23,8 @@
         "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.0-20190516.1",
         "templateRepoURL": "https://github.com/Azure-App-Service/dotnetcore-template.git",
         "templateRepoBranchName": "dev",
-        "saveArtifacts": false
+        "saveArtifacts": false,
+        "useCache": true
     },
     {
         "stack": "dotnetcore",
@@ -29,7 +32,8 @@
         "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:1.1-20190516.1",
         "templateRepoURL": "https://github.com/Azure-App-Service/dotnetcore-template.git",
         "templateRepoBranchName": "dev",
-        "saveArtifacts": false
+        "saveArtifacts": false,
+        "useCache": true
     },
     {
         "stack": "dotnetcore",
@@ -37,6 +41,7 @@
         "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:1.0-20190516.1",
         "templateRepoURL": "https://github.com/Azure-App-Service/dotnetcore-template.git",
         "templateRepoBranchName": "dev",
-        "saveArtifacts": false
+        "saveArtifacts": false,
+        "useCache": true
     }
 ]
