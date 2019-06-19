@@ -8,7 +8,7 @@
         "outputImageName": "dotnetcore:dev-2.2",
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-2.2.git",
         "outputRepoBranchName": "dev",
-        "webAppName": "appsvcbuild-dotnetcore-2-2-dev",
+        "webAppName": "blimp-dotnetcore-2-2-dev",
         "saveArtifacts": true,
         "useCache": true
     },
@@ -21,7 +21,7 @@
         "outputImageName": "dotnetcore:dev-2.1",
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-2.1.git",
         "outputRepoBranchName": "dev",
-        "webAppName": "appsvcbuild-dotnetcore-2-1-dev",
+        "webAppName": "blimp-dotnetcore-2-1-dev",
         "saveArtifacts": true,
         "useCache": true
     },
@@ -34,7 +34,7 @@
         "outputImageName": "dotnetcore:dev-2.0",
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-2.0.git",
         "outputRepoBranchName": "dev",
-        "webAppName": "appsvcbuild-dotnetcore-2-0-dev",
+        "webAppName": "blimp-dotnetcore-2-0-dev",
         "saveArtifacts": true,
         "useCache": true
     },
@@ -47,7 +47,7 @@
         "outputImageName": "dotnetcore:dev-1.1",
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-1.1.git",
         "outputRepoBranchName": "dev",
-        "webAppName": "appsvcbuild-dotnetcore-1-1-dev",
+        "webAppName": "blimp-dotnetcore-1-1-dev",
         "saveArtifacts": true,
         "useCache": true
     },
@@ -60,7 +60,7 @@
         "outputImageName": "dotnetcore:dev-1.0",
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-1.0.git",
         "outputRepoBranchName": "dev",
-        "webAppName": "appsvcbuild-dotnetcore-1-0-dev",
+        "webAppName": "blimp-dotnetcore-1-0-dev",
         "saveArtifacts": true,
         "useCache": true
     }
