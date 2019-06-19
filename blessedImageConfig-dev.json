@@ -2,7 +2,7 @@
     {
         "stack": "dotnetcore",
         "version": "2.2",
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.2-20190516.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.2-20190611.2",
         "templateRepoURL": "https://github.com/Azure-App-Service/dotnetcore-template.git",
         "templateRepoBranchName": "dev",
         "outputImageName": "dotnetcore:dev-2.2",
@@ -15,7 +15,7 @@
     {
         "stack": "dotnetcore",
         "version": "2.1",
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.1-20190516.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.1-20190611.2",
         "templateRepoURL": "https://github.com/Azure-App-Service/dotnetcore-template.git",
         "templateRepoBranchName": "dev",
         "outputImageName": "dotnetcore:dev-2.1",
@@ -28,7 +28,7 @@
     {
         "stack": "dotnetcore",
         "version": "2.0",
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.0-20190516.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.0-20190611.2",
         "templateRepoURL": "https://github.com/Azure-App-Service/dotnetcore-template.git",
         "templateRepoBranchName": "dev",
         "outputImageName": "dotnetcore:dev-2.0",
@@ -41,7 +41,7 @@
     {
         "stack": "dotnetcore",
         "version": "1.1",
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:1.1-20190516.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:1.1-20190611.2",
         "templateRepoURL": "https://github.com/Azure-App-Service/dotnetcore-template.git",
         "templateRepoBranchName": "dev",
         "outputImageName": "dotnetcore:dev-1.1",
@@ -54,7 +54,7 @@
     {
         "stack": "dotnetcore",
         "version": "1.0",
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:1.0-20190516.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:1.0-20190611.2",
         "templateRepoURL": "https://github.com/Azure-App-Service/dotnetcore-template.git",
         "templateRepoBranchName": "dev",
         "outputImageName": "dotnetcore:dev-1.0",
