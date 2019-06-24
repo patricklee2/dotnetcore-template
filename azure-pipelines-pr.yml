@@ -23,7 +23,7 @@ jobs:
       else
         python3 runTest.py \
           --config "blessedImageConfig-temp.json" \
-          --code $(SecretCode) \
           --pullRepo $(system.pullRequest.sourceRepositoryUri) \
-          --pullId $(system.pullRequest.pullRequestNumber)
+          --pullId $(system.pullRequest.pullRequestNumber) \
+          --code $(SecretCode)
       fi
