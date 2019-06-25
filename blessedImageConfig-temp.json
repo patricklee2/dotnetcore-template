@@ -1,6 +1,15 @@
 [
     {
         "stack": "dotnetcore",
+        "version": "3.0",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:3.0-20190611.2",
+        "templateRepoURL": "https://github.com/Azure-App-Service/dotnetcore-template.git",
+        "templateRepoBranchName": "dev",
+        "saveArtifacts": false,
+        "useCache": true
+    },
+    {
+        "stack": "dotnetcore",
         "version": "2.2",
         "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.2-20190611.2",
         "templateRepoURL": "https://github.com/Azure-App-Service/dotnetcore-template.git",

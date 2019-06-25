@@ -1,6 +1,19 @@
 [
     {
         "stack": "dotnetcore",
+        "version": "3.0",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:3.0-20190611.2",
+        "templateRepoURL": "https://github.com/Azure-App-Service/dotnetcore-template.git",
+        "templateRepoBranchName": "save",
+        "outputImageName": "dotnetcore:save-3.0",
+        "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-3.0.git",
+        "outputRepoBranchName": "save",
+        "webAppName": "blimp-dotnetcore-3-0-save",
+        "saveArtifacts": true,
+        "useCache": true
+    },
+    {
+        "stack": "dotnetcore",
         "version": "2.2",
         "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.2-20190611.2",
         "templateRepoURL": "https://github.com/Azure-App-Service/dotnetcore-template.git",
