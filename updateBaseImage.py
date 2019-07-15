@@ -35,4 +35,3 @@ for config in configs:
         newBaseImageName = "mcr.microsoft.com/oryx/" + br["stack"] + ":" + br["version"] + "-" + newOryxTimestamp
         br.update( { "baseImageName": newBaseImageName })
     writeConfig(buildRequests, config)
-
