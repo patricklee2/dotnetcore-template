@@ -10,6 +10,9 @@ RUN apt-get update \
         curl \
         wget \
         tcptraceroute \
+        net-tools \
+        dnsutils \
+        tcpdump \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /defaulthome/hostingstart \
