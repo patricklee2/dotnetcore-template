@@ -19,7 +19,7 @@ RUN apt-get update \
 RUN mkdir -p /defaulthome/hostingstart \
     && mkdir -p /home/LogFiles/ \
     && echo "root:Docker!" | chpasswd \
-    && echo "cd /home" >> /etc/bash.bashrc
+    && echo "cd /home" >> /root/.bashrc
 
 COPY bin.zip /tmp
 RUN unzip -q -o /tmp/bin.zip -d /defaulthome/hostingstart \
