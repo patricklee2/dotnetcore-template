@@ -1,6 +1,6 @@
 [
     {
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:3.0-20190924.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:3.0-20191018.1",
         "saveArtifacts": false,
         "stack": "dotnetcore",
         "templateRepoBranchName": "dev",
@@ -9,7 +9,7 @@
         "version": "3.0"
     },
     {
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.2-20190924.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.2-20191018.1",
         "saveArtifacts": false,
         "stack": "dotnetcore",
         "templateRepoBranchName": "dev",
@@ -18,7 +18,7 @@
         "version": "2.2"
     },
     {
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.1-20190924.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.1-20191018.1",
         "saveArtifacts": false,
         "stack": "dotnetcore",
         "templateRepoBranchName": "dev",
@@ -27,7 +27,7 @@
         "version": "2.1"
     },
     {
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.0-20190924.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.0-20191018.1",
         "saveArtifacts": false,
         "stack": "dotnetcore",
         "templateRepoBranchName": "dev",
@@ -36,7 +36,7 @@
         "version": "2.0"
     },
     {
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:1.1-20190924.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:1.1-20191018.1",
         "saveArtifacts": false,
         "stack": "dotnetcore",
         "templateRepoBranchName": "dev",
@@ -45,7 +45,7 @@
         "version": "1.1"
     },
     {
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:1.0-20190924.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:1.0-20191018.1",
         "saveArtifacts": false,
         "stack": "dotnetcore",
         "templateRepoBranchName": "dev",

@@ -1,6 +1,6 @@
 [
     {
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:3.0-20190924.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:3.0-20191018.1",
         "outputImageName": "dotnetcore:save-3.0",
         "outputRepoBranchName": "save",
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-3.0.git",
@@ -13,7 +13,7 @@
         "webAppName": "blimp-dotnetcore-3-0-save"
     },
     {
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.2-20190924.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.2-20191018.1",
         "outputImageName": "dotnetcore:save-2.2",
         "outputRepoBranchName": "save",
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-2.2.git",
@@ -26,7 +26,7 @@
         "webAppName": "blimp-dotnetcore-2-2-save"
     },
     {
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.1-20190924.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.1-20191018.1",
         "outputImageName": "dotnetcore:save-2.1",
         "outputRepoBranchName": "save",
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-2.1.git",
@@ -39,7 +39,7 @@
         "webAppName": "blimp-dotnetcore-2-1-save"
     },
     {
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.0-20190924.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:2.0-20191018.1",
         "outputImageName": "dotnetcore:save-2.0",
         "outputRepoBranchName": "save",
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-2.0.git",
@@ -52,7 +52,7 @@
         "webAppName": "blimp-dotnetcore-2-0-save"
     },
     {
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:1.1-20190924.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:1.1-20191018.1",
         "outputImageName": "dotnetcore:save-1.1",
         "outputRepoBranchName": "save",
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-1.1.git",
@@ -65,7 +65,7 @@
         "webAppName": "blimp-dotnetcore-1-1-save"
     },
     {
-        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:1.0-20190924.1",
+        "baseImageName": "mcr.microsoft.com/oryx/dotnetcore:1.0-20191018.1",
         "outputImageName": "dotnetcore:save-1.0",
         "outputRepoBranchName": "save",
         "outputRepoURL": "https://github.com/blessedimagepipeline/dotnetcore-1.0.git",
